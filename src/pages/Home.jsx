@@ -5,7 +5,7 @@ const Home = ({ cart, setCart }) => {
   const [filtered, setFiltered] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:4000/api/store')
+    fetch('https://backend-f361.onrender.com/api/store')
       .then(res => res.json())
       .then(data => {
         setProducts(data.stores);
